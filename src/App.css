@@ -1,0 +1,11 @@
+:root, ::before, ::after {
+  --white:#FAFAFA;
+  --black:#2F2B3D;
+  --red:#F55A5A;
+  --light-gray:#F5F5F5;
+  --dark-gray:#A5A3AE;
+}
+
+body {
+  background-color:var(--white);
+}
