@@ -4,8 +4,142 @@
   --red:#F55A5A;
   --light-gray:#F5F5F5;
   --dark-gray:#A5A3AE;
+  font-family: 'Inter';
 }
 
 body {
   background-color:var(--white);
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
 }
+
+#root {
+  margin:0;
+  padding:0;
+}
+
+/* navbar */
+.navbar-container {
+  background-color:var(--red);
+  /* outline:2px solid blue; */
+  height:12vh;
+  margin:0;
+  width:100%;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:nowrap;
+  justify-content:center;
+  align-items:center;
+  color:var(--white);
+  position:fixed;
+}
+
+.earth-americas {
+  margin:0.3em;
+  font-size:3em;
+}
+
+.navbar-title {
+  font-size:2em;
+}
+
+/* mainContents */
+
+.cards-container {
+  display:flex;
+  flex-direction:column;
+  flex-wrap:nowrap;
+  align-items:center;
+  position:relative;
+  top:12vh;
+  z-index:-1;
+}
+
+.main-contents-container {
+  /* outline:2px solid red; */
+  display:flex;
+  width:600px;
+  max-width:600px;
+  margin-top:20px;
+  flex-direction:row;
+  flex-wrap:nowrap;
+  color:var(--black);
+}
+
+.card-img {
+  width:175px;
+  height:235px;
+  object-fit:cover;
+  border-radius:10px;
+}
+
+.card-location-container {
+  /* outline:2px solid black; */
+  padding:20px;
+  overflow:auto;
+  max-height:335px;
+  display:flex;
+  flex-direction:column;
+  flex-wrap:nowrap;
+  justify-content:space-evenly;
+}
+
+.card-icon-location {
+  /* outline:2px solid green; */
+  display:flex;
+  flex-direction: row;
+  flex-wrap:nowrap;
+  justify-content:flex-start;
+  align-items:center;
+}
+
+.main-pin {
+  margin:0.3em;
+  font-size:0.9em;
+}
+
+.card-icon-title {
+  font-size:0.9em;
+}
+
+.card-map {
+  margin:0.3em;
+  color:var(--dark-gray);
+  font-size:0.9em;
+}
+
+.card-title {
+  font-size:2.5em;
+  margin:0;
+}
+
+.card-dates {
+  font-size:1.1em;
+  font-weight:bold;
+  margin:0;
+}
+
+.card-paragraph {
+  font-size:1em;
+}
+
+
+/* 
+#root
+.navbar-container
+.earth-americas
+.navbar-title 
+
+.main-contents-container
+.card-img
+.card-location-container
+.card-icon-location
+.main-pin
+.card-icon-title
+.card-map
+.card-title
+.card-dates
+.card-paragraph
+
+*/
